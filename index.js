@@ -16,11 +16,11 @@ function increaseRankBy(n) {
 
   for (let i = 0; i < children.length; i < l; i++) {
     children[i].innerHTML = (start + i + n).toString()
+  }
+  children = secondChildren.children
+  start = 12
 
-    children = secondChildren.children
-    start = 12
-
-    for (let i = 0; i < children.length; i < l; i++) {
-      children[i].innerHTML = (start - i + n).toString()
+  for (let i = 0; i < children.length; i < l; i++) {
+    children[i].innerHTML = (start - i + n).toString()
   }
 }
