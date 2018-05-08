@@ -17,6 +17,7 @@ function increaseRankBy(n) {
   for (let i = 0; i < children.length; i < l; i++) {
     children[i].innerHTML = (start + i + n).toString()
   }
+  
   children = secondChildren.children
   start = 12
 
