@@ -32,6 +32,6 @@ function deepestChild() {
   let secondChild = firstChild.children[0]
   let thirdChild = secondChild.children[0]
   let fourthChild = thirdChild.children[0]
-  return fourthChild.textContent
+  return fourthChild.textContent()
 
 }
