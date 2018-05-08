@@ -11,10 +11,16 @@ function increaseRankBy(n) {
   const firstChildren = lis[0]
   const secondChildren = lis[1]
 
-  let children = firstChildren.children 
-  let start = 1 
+  let children = firstChildren.children
+  let start = 1
 
   for (let i = 0; i < children.length; i < l; i++) {
     children[i].innerHTML = (start + i + n).toString()
+
+    children = secondChildren.children
+    start = 12
+
+    for (let i = 0; i < children.length; i < l; i++) {
+      children[i].innerHTML = (start - i + n).toString()
   }
 }
